@@ -51,7 +51,7 @@ Route::group(['middleware' => ['auth.docente']], function () {
 
 //ADMIN
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/register', 'UserController@store')->name('register');
+    //Route::get('/register', 'UserController@store')->name('register');
     Route::resource('user', 'UserController', ['except' => ['show']]);
 
     Route::get('planteles', 'PlantelController@index')->name('planteles.index');
