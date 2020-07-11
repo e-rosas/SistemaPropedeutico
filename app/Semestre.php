@@ -28,7 +28,7 @@ class Semestre extends Model
 
     public function periodo()
     {
-        return $this->fecha_inicio->format('F').' - '.$this->fecha_final->format('F').' '.$this->fecha_final->year;
+        return $this->fecha_inicio->translatedFormat('F').' - '.$this->fecha_final->translatedFormat('F').' '.$this->fecha_final->year;
     }
 
     //Un semestre tiene muchos grupos
