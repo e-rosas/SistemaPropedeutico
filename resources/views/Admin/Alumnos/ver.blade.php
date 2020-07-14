@@ -67,7 +67,7 @@
                             </p>
                         </div>
                     </p>
-                    <div class="card-description">
+                    <div class="card-description text-center">
                         <p>{{ $alumno->direccion }}</p>
                         <p class="card-text">
                             {{ $alumno->telefono }}
@@ -82,7 +82,7 @@
                         </p>
                         <p class="card-text">
                             <a href="{{ route('semestres.ver', $alumno->grupo->semestre) }}">
-                                {{ $alumno->grupo->semestre->numero . ' ' . $alumno->grupo->semestre->periodo() }}
+                                {{ $alumno->grupo->semestre->periodo() }}
                             </a>
                         </p>
                         <p class="card-text">

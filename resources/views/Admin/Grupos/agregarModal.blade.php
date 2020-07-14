@@ -117,6 +117,7 @@
         }); 
         $("#semestre").select2({
           minimumInputLength: 1,
+          language: "es",
           ajax: { 
           url: "{{route('semestres.busqueda')}}",
           type:'post',
@@ -139,6 +140,7 @@
         
         $("#semestre_id").select2({
             minimumInputLength: 1,
+            language: "es",
             ajax: { 
             url: "{{route('semestres.busqueda')}}",
             type:'post',
@@ -160,6 +162,7 @@
         });
         $("#carrera_id").select2({
           minimumInputLength: 3,
+          language: "es",
           ajax: { 
           url: "{{route('carreras.busqueda')}}",
           type:'post',
@@ -181,6 +184,7 @@
         });
         $("#carrera").select2({
           minimumInputLength: 3,
+          language: "es",
           ajax: { 
           url: "{{route('carreras.busqueda')}}",
           type:'post',
@@ -207,4 +211,5 @@
 @push('headjs')
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/i18n/es.js"></script>
 @endpush

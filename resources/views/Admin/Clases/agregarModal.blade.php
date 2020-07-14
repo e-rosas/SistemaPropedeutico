@@ -166,6 +166,7 @@
         }); 
         $("#grupo").select2({
           minimumInputLength: 1,
+          language: "es",
           ajax: { 
           url: "{{route('grupos.busqueda')}}",
           type:'post',
@@ -188,6 +189,7 @@
         
         $("#grupo_id").select2({
             minimumInputLength: 1,
+            language: "es",
             ajax: { 
             url: "{{route('grupos.busqueda')}}",
             type:'post',
@@ -209,6 +211,7 @@
         });
         $("#materia_id").select2({
           minimumInputLength: 3,
+          language: "es",
           ajax: { 
           url: "{{route('materias.busqueda')}}",
           type:'post',
@@ -230,6 +233,7 @@
         });
         $("#materia").select2({
           minimumInputLength: 3,
+          language: "es",
           ajax: { 
           url: "{{route('materias.busqueda')}}",
           type:'post',
@@ -251,6 +255,7 @@
         });
         $("#docente_id").select2({
           minimumInputLength: 3,
+          language: "es",
           ajax: { 
           url: "{{route('docentes.busqueda')}}",
           type:'post',
@@ -277,4 +282,5 @@
 @push('headjs')
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/i18n/es.js"></script>
 @endpush

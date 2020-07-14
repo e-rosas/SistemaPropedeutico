@@ -81,6 +81,8 @@
         }); 
         $("#grupo").select2({
             minimumInputLength: 1,
+            language: "es",
+            placeholder: "Buscar un grupo",
             ajax: { 
             url: "{{route('grupos.busqueda')}}",
             type:'post',
@@ -102,6 +104,8 @@
         });
         $("#grupo_id").select2({
             minimumInputLength: 3,
+            language: "es",
+            placeholder: "Buscar un grupo",
             ajax: { 
             url: "{{route('grupos.busqueda')}}",
             type:'post',
@@ -128,4 +132,5 @@
 @push('headjs')
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/i18n/es.js"></script>
 @endpush
